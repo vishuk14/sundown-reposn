@@ -36,8 +36,17 @@
             end-to-end experiences and environments.
           </p>
           <h1 class="main-heading">
-            SPACES <br />
-            THAT <br />INSPIRE
+            <span class="ov-hidden">
+              <span id="spaceText"> SPACES </span>
+            </span>
+            <br />
+            <span class="ov-hidden">
+              <span id="ThatText"> THAT </span>
+            </span>
+            <br />
+            <span class="ov-hidden"
+              ><span id="inspireText"> INSPIRE </span>
+            </span>
           </h1>
         </div>
         <div id="animated-ball-top"></div>
@@ -47,7 +56,8 @@
       <div id="section-2">
         <video
           class="video"
-          src="https://player.vimeo.com/progressive_redirect/playback/915350257/rendition/1080p/file.mp4?loc=external&signature=768f26c5396775e76c340cb808a897a724e78acb8231106dd94af9d732695176"
+          muted
+          src="https://download-video.akamaized.net/v3-1/playback/ea709ea7-d205-45c7-9919-b6484f30fa24/b7e94ef4?__token__=st=1714325205~exp=1714339605~acl=%2Fv3-1%2Fplayback%2Fea709ea7-d205-45c7-9919-b6484f30fa24%2Fb7e94ef4%2A~hmac=152c77ec2bf69d53842299d498146eb2660896c562152966e3a36a2459b9999e&r=dXMtZWFzdDE%3D"
         ></video>
       </div>
 
@@ -85,7 +95,7 @@
       <div id="section-4">
         <!-- left section -->
         <div id="leftsection">
-          <h4>
+          <h4 id="leftSection-content">
             We are a group of <br />
             design-driven, goal-<br />focused creators,<br />
             producers, and<br />
@@ -388,6 +398,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
     <script src="scripts.js"></script>
+    <script src="gsap.js"></script>
   </body>
 </html>

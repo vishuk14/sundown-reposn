@@ -109,6 +109,7 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
+    overflow: hidden;
     justify-content: space-between;
     align-items: end;
     display: flex;
@@ -139,13 +140,13 @@ body {
   border-radius: 40vw;
   position: absolute;
   right: 10%;
-  bottom: -60%;
+  bottom: -80%;
 
   /* filter: blur(0px); */
   filter: blur(26px);
   transform: skew(10deg);
   z-index: 10;
-  animation: anim-ball-top 3s ease-in-out infinite alternate;
+  animation: anim-ball-top 2s ease-in-out infinite alternate;
 }
 #animated-ball-top-extra {
   z-index: 3;
@@ -582,7 +583,7 @@ body {
 } */
 
 .footer {
-  margin-bottom: 13.5rem;
+  /* margin-bottom: 13.5rem; */
   background-color: #000;
   position: relative;
   padding: 2vw 4vw;
@@ -742,4 +743,16 @@ body {
   z-index: 9;
   filter: blur(80px);
   border-radius: 999999999px;
+}
+
+.ov-hidden {
+  overflow: hidden;
+  height: fit-content;
+  position: relative;
+  display: inline-flex;
+}
+
+#spaceText {
+  position: relative; /* or 'relative' based on your needs */
+  /* Additional CSS styles */
 }

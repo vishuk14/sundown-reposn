@@ -1,9 +1,9 @@
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("#main"),
-  smooth: true,
-  multiplier: 0.2,
-  getSpeed: true,
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector("#main"),
+//   smooth: true,
+//   multiplier: 0.2,
+//   getSpeed: true,
+// });
 
 const mainCom = document.querySelector(".text-accordion-wrapper");
 const showImgContainer = document.getElementById("imgContainer");
@@ -115,9 +115,14 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// vidoe play when in frame
 
+const videoPlay = document.querySelector("video");
 
-// gsap is here
+videoPlay.addEventListener("mouseenter", function () {
+  videoPlay.play();
+});
 
-// section-1 is here
-
+videoPlay.addEventListener("mouseleave", function () {
+  videoPlay.pause();
+});
